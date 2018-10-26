@@ -6,7 +6,7 @@ prefs = {"profile.default_content_setting_values.notifications" : 2}
 chrome_options.add_experimental_option("prefs",prefs)
 browser = webdriver.Chrome(chrome_options=chrome_options)
 browser.get("https://www.facebook.com/login.php")
-browser.find_element_by_id('email').send_keys('8826035774')
+browser.find_element_by_id('email').send_keys('')
 browser.find_element_by_id('pass').send_keys('')
 browser.find_element_by_id('loginbutton').click()
 browser.find_element_by_xpath("//textarea[@name='xhpc_message']").send_keys(open('caption.txt', 'r').read())
